@@ -1,6 +1,7 @@
 % Title:       Russian grammar tables
+% Subject:     Russian declension of nouns, pronouns, and adjectives
 % Author:      Leo Arnold
-% URL:         https://github.com/leoarnold/russian-grammer-tables
+% URL:         https://github.com/leoarnold/russian-grammar-tables
 % License:     CC BY 4.0 - http://creativecommons.org/licenses/by/4.0/
 
 \documentclass[a4paper, landscape, 11pt]{article}
@@ -9,11 +10,21 @@
 \usepackage[T1]{fontenc}
 \usepackage[russian]{babel}
 
-\usepackage[tmargin=15mm, rmargin=10mm, bmargin=15mm, lmargin=10mm]{geometry}
+\usepackage[tmargin=15mm, rmargin=10mm, bmargin=20mm, lmargin=10mm]{geometry}
 
-\usepackage{multirow, setspace, tabularx, xcolor}
+\usepackage{hyperref, multirow, scrpage2, setspace, tabularx, xcolor}
 
-\pagestyle{empty}
+\hypersetup{
+  pdftitle   = {Russian grammar tables},
+  pdfsubject = {Russian declension of nouns, pronouns, and adjectives},
+  pdfauthor  = {Leo Arnold},
+}
+
+\pagestyle{scrheadings}
+\ohead{\relax}
+\ifoot{Скачивание: \url{https://github.com/leoarnold/russian-grammar-tables}}
+\ofoot{Автор: Leo Arnold, Лицензия: \href{http://creativecommons.org/licenses/by/4.0/}{CC BY 4.0}}
+
 \setlength{\parindent}{0mm}
 \onehalfspacing
 
