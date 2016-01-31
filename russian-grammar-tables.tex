@@ -1,0 +1,107 @@
+% Title:       Russian grammar tables
+% Author:      Leo Arnold
+% URL:         https://github.com/leoarnold/russian-grammer-tables
+% License:     CC BY 4.0 - http://creativecommons.org/licenses/by/4.0/
+
+\documentclass[a4paper, landscape, 11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[russian]{babel}
+
+\usepackage[tmargin=15mm, rmargin=10mm, bmargin=15mm, lmargin=10mm]{geometry}
+
+\usepackage{multirow, setspace, tabularx, xcolor}
+
+\pagestyle{empty}
+\setlength{\parindent}{0mm}
+\onehalfspacing
+
+\newcommand{\an}[1]{\textcolor{teal}{#1}} % animate
+\newcommand{\us}[1]{\textcolor{blue}{#1}} % unstressed
+\newcommand{\st}[1]{\textcolor{red}{#1}}  % stressed
+
+\begin{document}
+
+\strut\vfil
+
+\begin{center}
+	\Huge\bfseries личное местоимение
+\end{center}
+
+\begin{tabularx}{\textwidth}{|c|X|X|X|X|X|X|X|X|}
+	\hline
+	И & кто?  & я    & ты    & он/о   & она           & мы   & вы   & они    \\ %\hline
+	Р & кого? & меня & тебя  & (н)его & (н)её         & нас  & вас  & (н)их  \\ %\hline
+	Д & кому? & мне  & тебе  & (н)ему & (н)ей         & нам  & вам  & (н)им  \\ \cline{2-9}
+	В &                      \multicolumn{8}{c|}{как Р}                      \\ \cline{2-9}
+	Т & кем?  & мной & тобой & (н)им  & (н)ей / (н)ею & нами & вами & (н)ими \\ %\hline
+	П & ком?  & мне  & тебе  & нём    & ней           & нас  & вас  & них    \\ \hline
+\end{tabularx}
+
+\vfill
+
+\begin{center}
+	\Huge\bfseries притяжательное местоимение
+\end{center}
+
+\begin{tabularx}{\textwidth}{|c|X|X|X|X|X|X|X|X|X|X|X|X|}
+	\hline
+	\strut & \strut     & \multicolumn{4}{l|}{я (мо-), ты (тво-), ся (сво-)} & он/о   & она    & \multicolumn{4}{l|}{мы (наш-), вы (ваш-)}   & они    \\ \hline
+	  И    & что?       & й        & ё             & я      & и              & \strut & \strut & $\emptyset$ & е          & а      & и       & \strut \\ %\cline{1-6}\cline{9-12}
+	  Р    & чего?      & \multicolumn{2}{c|}{его} & ей     & их             & \strut & \strut & \multicolumn{2}{c|}{его} & ей     & их      & \strut \\ %\cline{1-6}\cline{9-12}
+	  Д    & чему?      & \multicolumn{2}{c|}{ему} & ей     & им             & \strut & \strut & \multicolumn{2}{c|}{ему} & ей     & им      & \strut \\ %\cline{1-6}\cline{9-12}
+	  В    & что?       & й        & ё             & и      & и              & (н)его & (н)её  & $\emptyset$ & е          & у      & и       & (н)их  \\
+	\strut & \an{кого?} & \an{его} & \strut        & \strut & \an{их}        & \strut & \strut & \an{его}    & \strut     & \strut & \an{их} & \strut \\ %\cline{1-6}\cline{9-12}
+	  Т    & чем?       & \multicolumn{2}{c|}{им}  & ей     & ими            & \strut & \strut & \multicolumn{2}{c|}{им}  & ей     & ими     & \strut \\ %\cline{1-6}\cline{9-12}
+	  П    & чём?       & \multicolumn{2}{c|}{ём}  & ей     & их             & \strut & \strut & \multicolumn{2}{c|}{ем}  & ей     & их      & \strut \\ \hline
+	\strut & \strut     & чей?     & чьё?          & чья?   & чеи?           & \strut & \strut & чей?        & чьё?       & чья?   & чеи?    & \strut \\ \hline
+\end{tabularx}
+
+\vfill\strut
+
+\newpage
+
+\begin{center}
+	\Huge\bfseries Окончании имён прилагательных
+\end{center}
+
+\begin{tabularx}{\textwidth}{|c|X|X|X|X||X|X|X|X|}
+	\hline
+	  & М                   & С  & Ж  & МЧ                     & М             & С        & Ж  & МЧ           \\ \hline
+	N & ый / ой             & ое & ая & ые                     & ий            & ее       & яя & ие           \\
+	Р & \multicolumn{2}{c|}{ого} & ой & ых                     & \multicolumn{2}{c|}{его} & ей & их           \\
+	Д & \multicolumn{2}{c|}{ому} & ой & ым                     & \multicolumn{2}{c|}{ему} & ей & им           \\
+	В & ый / ой  / \an{ого} & ое & ую & ые / \an{ых}           & ий / \an{его} & ее       & юю & ие / \an{их} \\
+	Т & \multicolumn{2}{c|}{ым}  & ой & ыми                    & \multicolumn{2}{c|}{им}  & ей & ими          \\
+	П & \multicolumn{2}{c|}{ом}  & ой & ых                     & \multicolumn{2}{c|}{ем}  & ей & их           \\ \hline
+	  & \multicolumn{4}{l||}{активный, живой} & \multicolumn{4}{l|}{летний, синий}           \\ \hline
+\end{tabularx}
+
+\vfill
+
+\begin{center}
+\Huge\bfseries Окончании имён существительных
+\end{center}
+
+\begin{tabularx}{\textwidth}{|c|XXXX|XXX|XXX|XX|}
+	\hline
+	\strut &                                        \multicolumn{7}{c|}{I. cклонение}                                         &            \multicolumn{3}{c|}{II. cклонение}             &      \multicolumn{2}{c|}{III. cклонение}       \\
+	  ЕЧ   &                          \multicolumn{4}{c}{мужскые}                           &  \multicolumn{3}{c|}{средные}   &       \multicolumn{3}{c|}{преимущественно женские}        & \multicolumn{1}{c}{ж} & \multicolumn{1}{c|}{с} \\ \hline
+	  N    & $\emptyset$          & \us{ь}            & й                 & и-й             & о           & (ь)е/ё   & и-е    & а                    & я                 & и-я            & ь                     & мя                     \\
+	  Р    & а                    & я                 & я                 & и-я             & а           & (ь)я     & и-я    & ы                    & и                 & и-и            & и                     & мен-и                  \\
+	  Д    & у                    & ю                 & ю                 & и-ю             & у           & (ь)ю     & и-ю    & е                    & е                 & и-и            & и                     & мен-и                  \\
+	  В    & $\emptyset$ / \an{а} & ь / \an{я}        & й / \an{я}        & и-й / \an{и-я}  & о           & (ь)е/ё   & и-е    & у                    & ю                 & и-ю            & ь                     & мя                     \\
+	  Т    & ом                   & \us{ем} / \st{ём} & \us{ем} / \st{ём} & и-ем            & ом          & (ь)ем/ём & и-ем   & ой                   & \us{ей} / \st{ёй} & и-ей           & ью                    & мен-ем                 \\
+	  П    & е                    & е                 & е                 & и-и             & е           & (ь)е     & и-и    & е                    & е                 & и-и            & и                     & мен-и                  \\ \hline
+	\strut & мост                 & огонь             & чай               & сценарий        & небо        & море     & здание & лампа                & неделя            & станция        & ночь                  & имя                    \\
+	  МЧ   & \an{кот / ёж}        & \an{учитель}      & \an{герой}        & \an{Василий}    & \strut      & копьё    & \strut & \an{папа}            & \an{героиня}      & \an{Мария}     & \an{мышь}             & \strut                 \\ \hline
+	  N    & ы                    & и                 & и                 & и-и             & а           & (ь)я     & и-я    & ы                    & и                 & и-и            & и                     & мен-а                  \\
+	  Р    & ов / ей              & ей                & \us{ев} / \st{ёв} & и-ев            & $\emptyset$ & (ий) ей  & и-й    & $\emptyset$          & ь                 & и-й            & ей                    & мён                    \\
+	  Д    & ам                   & ям                & ям                & и-ям            & ам          & (ь)ям    & и-ям   & ам                   & ям                & и-ям           & ям                    & мен-ам                 \\
+	  В    & ы / \an{ов / ей}     & и / \an{ей}       & и / \an{ев / ёв}  & и-и / \an{и-ев} & а           & (ь)я     & и-я    & ы / \an{$\emptyset$} & и / \an{ь}        & и-и / \an{и-й} & и / \an{ей}           & мен-а                  \\
+	  Т    & ами                  & ями               & ями               & и-ями           & ами         & (ь)ями   & и-ями  & ами                  & ями               & и-ями          & ями                   & мен-ами                \\
+	  П    & ах                   & ях                & ях                & и-ях            & ах          & (ь)ях    & и-ях   & ах                   & ях                & и-ях           & ях                    & мен-ах                 \\ \hline
+\end{tabularx}
+
+\end{document}
